@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  cursor: none;
+}
+.rainbow-text {
+  font-family: Helvetica, Arial, "Noto Sans JP", sans-serif;
+  line-height: 1.1;
+  white-space: nowrap;
+  background: linear-gradient(90deg, blue, aqua, lime, yellow, red, fuchsia, blue) 0 / 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 20s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 500% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.title {
+  font-size: 20vw;
+  font-weight: 400;
+}
+.subtitle {
+  font-size: 4vw;
+  font-weight: 500;
+}
+.title > .hub {
+  border-radius: 2vw;
+  padding:1.5vw;
+  padding-top: 0;
+}
+.subtitle > .hub {
+  border-radius: 0.75vw;
+  margin-left: 0.25vw;
+  padding: 0.5vw;
+  padding-top: 0.25vw;
+}

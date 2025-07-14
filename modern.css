@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Noto Sans JP', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  position: relative;
+}
+header {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 3vw;
+  text-wrap: nowrap;
+}
+header p {
+  font-size: 1em;
+}
+main {
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+main iframe {
+  width: 80%;
+  aspect-ratio: 16 / 9;
+}
+main h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+p {
+  margin:0;
+}
+#share {
+  color: #0077cc;
+  cursor: pointer;
+}
+.rainbow-text {
+  background: linear-gradient(90deg,blue,aqua,lime,yellow,red,fuchsia,blue) 0 / 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 20s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 500% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.rainbow-text-dark {
+  background: linear-gradient(90deg,#00a,#0aa,#0a0,#aa0,#a00,#a0a,#00a) 0 / 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 20s linear infinite;
+}
+blockquote {
+  background-color: #ededed;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-left: 5px solid #0077cc;
+}
+blockquote::before {
+  content: '\201C';
+}
+blockquote::after {
+  content: '\201D';
+}
+a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+  background-color: #f4f4f4;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  top: 100vh;
+  padding-bottom: 1vh;
+}
+footer a {
+  color: #fff;
+  font-size: 0.75em;
+}
+footer a:hover {
+  background-color: #999;
+}

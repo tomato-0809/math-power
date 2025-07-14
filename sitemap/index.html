@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メタ認知教会公式ウェブサイト - サイトマップ</title>
+    <link rel="stylesheet" href="/modern.css">
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>【公式】<span class="rainbow-text">メタ認知教会</span>ウェブサイト - サイトマップ</h1>
+      <p><span class="rainbow-text">メタ認知</span>を、世界へ―</p>
+    </header>
+    <main>
+      <h2><span class="rainbow-text">メタ認知</span>について</h2>
+      <a href="/about">こちら</a>をご参照ください。
+      <h2><span class="rainbow-text">メタ認知教会</span>に参加する</h2>
+      <a href="/contact">こちら</a>から、
+      <ul>
+        <li>名前（ハンドルネーム可）</li>
+        <li>Scratch, Twitter, メールアドレスのいずれか</li>
+      </ul>
+      <p>を添えてご連絡ください。</p>
+      <h2>リンク一覧</h2>
+      <a href="/"><span class="rainbow-text-dark">メタ認知教会</span>ウェブサイト / <span class="rainbow-text-dark">メタ認知</span>を、多くの人に。</a><br>
+      <a href="/excitedesign"><span class="rainbow-text-dark">メタ認知教会</span>ウェブサイト with Pornhub / <span class="rainbow-text-dark">メタ認知</span>とPornhubを、多くの人に。</a><br>
+      <a href="/pornhub">おまけ - シンプルなPornhubロゴ</a><br>
+      <a href="/about"><span class="rainbow-text-dark">メタ認知教会</span>とは</a><br>
+      <a href="/contact">お問い合わせ</a>
+      <h2>アクセス数</h2>
+      <p><span class="rainbow-text-dark">メタ認知教会</span>公式ウェブサイトにアクセスされた回数を表示します。</p>
+      <img src="https://counter.256server.com/math-power">
+      <h2>共有する</h2>
+      <p>以下のリンクまたはボタンをタップすると共有できます（ベータ版）。共有できない場合はコピペしてください。</p>
+      <p id="share">x.gd/math_power</p>
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=https://x.gd/math_power&text=メタ認知公式ウェブサイト&hashtags=メタ認知教会">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <h2>オススメ動画</h2>
+      <p>好みの動画を数日に一度、手動で設定しています。数日後にこのサイトを開くと、違う動画になっているかもしれませんよ^^</p>
+      <iframe src="https://www.youtube-nocookie.com/embed/aPy9LtbQ3Yc" allowfullscreen frameborder="0"></iframe>
+    </main>
+    <footer>
+      <p>© 2025 <span class="rainbow-text">メタ認知教会</span>.&nbsp;&nbsp;All Rights Reserved.</p>
+      <p><a href="/sitemap">サイトマップ</a> | <a href="/about"><span class="rainbow-text">メタ認知</span>とは</a> | <a href="/contact">お問い合わせ</a></p>
+    </footer>
+  </body>
+  <script src="/main.js"></script>
+  <script>
+    document.querySelector("#share").addEventListener("click", ()=> {
+      if (!window.navigator.share) {
+          alert("共有に対応していません。手動でコピペしてください。\n本当はそんな古いブラウザでアクセスしてほしくないです");
+          return;
+      }
+      navigator.share({
+        title: "メタ認知教会公式ウェブサイト",
+        text: "メタ認知教会公式ウ。ェブサイト / メタ認知を、多くの人に。",
+        url: "https://x.gd/math_power"
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script>
+      if(location.pathname.slice(-1) != "/") {
+        location.pathname += "/"
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メタ認知教会公式ウェブサイト / メタ認知を、世界へ―</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="rainbow-text title">メタ認知</div>
+    <div class="rainbow-text subtitle">- このデザインも数学のチカラ -</div>
+    <script src="/main.js"></script>
+    <script>
+      fetch("https://counter.256server.com/math-power");
+      document.body.addEventListener('click', function(){
+        document.body.requestFullscreen();				
+      });
+
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const params = Object.fromEntries(urlSearchParams.entries());
+      const title = document.querySelector(".title");
+      const subtitle = document.querySelector(".subtitle");
+
+      title.innerText = params.title;
+      subtitle.innerText = params.subtitle;
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メタ認知教会公式ウェブサイト - お問い合わせ</title>
+    <link rel="stylesheet" href="/modern.css">
+    <style>
+      #contact-form {
+        display: none;
+        width: 100%;
+        max-width: 1200px;
+        height: 620px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>【公式】<span class="rainbow-text">メタ認知教会</span>ウェブサイト - お問い合わせ</h1>
+      <p><span class="rainbow-text">メタ認知</span>を、世界へ―</p>
+    </header>
+    <main>
+      <h2>お問い合わせ</h2>
+      <p><span class="rainbow-text-dark">メタ認知教会</span>への問い合わせをこちらで行えます。</p>
+      <p>以下の注意事項をよくお読みの上、同意する場合はチェックボックスにチェックを入れると送信フォームが表示されます。</p>
+      <h2>注意事項</h2>
+      <p><span class="rainbow-text-dark">メタ認知教会</span>に関係ないものは一切受け付けておりません。送信するごとにあなたの家のお風呂にカビが生えます。</p>
+      <p>返信や対応を希望されていても、対応できない場合がございます。</p>
+      <ul>
+        <li>名前（ハンドルネーム可）</li>
+        <li>Scratch, Twitter, メールアドレスのいずれか</li>
+      </ul>
+      <p>の両方をご記入ください。いずれかの記入がない場合、お問い合わせを無視させていただきます。</p>
+      <p>(メールアドレスを知られたくない場合は、<a href="https://m.kuku.lu">メルアドぽいぽい</a>などで取得したメールアドレスでも構いません)</p>
+      <p>お急ぎのお問い合わせでも、すべて順番に対応させていただきます。</p>
+      <p>当ウェブサイトは個人の趣味で運営しているものです。優しく話しかけるようにご記入ください。</p>
+      <label><input type="checkbox"><span>以上に同意します</span></label>
+      <iframe id="contact-form" src="https://m.kuku.lu/f.php?f4561e5a7b" frameborder="0"></iframe>
+    </main>
+    <footer>
+      <p>© 2025 <span class="rainbow-text">メタ認知教会</span>.&nbsp;&nbsp;All Rights Reserved.</p>
+      <p><a href="/sitemap">サイトマップ</a> | <a href="/about"><span class="rainbow-text">メタ認知</span>とは</a> | <a href="/contact">お問い合わせ</a></p>
+    </footer>
+  </body>
+  <script src="/main.js"></script>
+  <script>
+    document.querySelector("input[type=checkbox]").addEventListener("change", e=>{document.querySelector("#contact-form").style.display = ["none","block"][e.target.checked+0];console.log(e)});
+  </script>
+</html>
