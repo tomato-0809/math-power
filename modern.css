@@ -22,7 +22,7 @@ header h1 {
   text-wrap: nowrap;
 }
 header p {
-  font-size: 1em;
+  font-size: min(1.5em, 3vw);
 }
 main {
   padding: 20px;
